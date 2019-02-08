@@ -1,0 +1,35 @@
+{
+  "name": "liulishuo-offline",
+  "version": "0.1.0",
+  "description": "Liulishuo Reading offline version",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --mode development",
+    "release": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "siger-young",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "connected-react-router": "^6.2.2",
+    "history": "^4.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-materialize": "^2.6.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}
