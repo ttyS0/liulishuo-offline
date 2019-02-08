@@ -71,6 +71,14 @@ main .poster-container img {
   max-width: 100%;
 }
 
+main audio {
+  width: 100%;
+}
+
+main .btn {
+  width: 100%;
+}
+
 main p {
   font-size: 18px;
 }
