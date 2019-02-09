@@ -24,13 +24,12 @@ span.title {
   float: left;
 }
 
-footer, header, main {
-  padding-left: 280px;
-}
-
 @media only screen and (max-width: 992px) {
   footer, header, main {
-    padding-left: 0
+    padding-left: 0;
+  }
+  .side-nav {
+    width: 300px;
   }
   h5 > span {
     display: block;
@@ -38,17 +37,33 @@ footer, header, main {
   }
 }
 
+
+footer, header, main {
+  padding-left: 380px;
+}
+
 .side-nav {
-  width: 280px;
+  width: 380px;
 }
 
 .side-nav li {
   border-bottom: 2px solid #CCC;
 }
 
-.side-nav a {
+.side-nav .text-title {
   font-size: 12px;
-  font-weight: normal;
+  display: block;
+  color: #000;
+}
+
+.side-nav .text-eng {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: #666;
+}
+
+.side-nav a {
   height: auto;
   padding: 3px;
   line-height: 2;
@@ -62,12 +77,35 @@ main {
   font-family: Georgia,Helvetica Neue,Helvetica,STHeitiSC-Light,Arial
 }
 
+main .eng {
+  font-size: 1.8rem;
+}
+
+main .title {
+  font-size: 1.4rem;
+}
+
+main .author {
+  display: block;
+  text-align: right;
+  color: #CCC;
+}
+
 main .poster-container {
   width: 100%;
   text-align: center;
 }
 
 main .poster-container img {
+  max-width: 100%;
+}
+
+
+main .content-container {
+  width: 100%;
+}
+
+main .content-container img {
   max-width: 100%;
 }
 
@@ -80,5 +118,5 @@ main .btn {
 }
 
 main p {
-  font-size: 18px;
+  font-size: 20px;
 }

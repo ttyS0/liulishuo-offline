@@ -1,4 +1,5 @@
 *.sh
 *.js
 *.tex
+*.lua
 !liulishuo-main.js
