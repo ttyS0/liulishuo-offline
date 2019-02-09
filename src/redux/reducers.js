@@ -17,7 +17,6 @@ const list = (state = { loading: false }, action)  => {
 }
 
 const article = (state = { loading: false }, action)  => {
-  console.log(action)
   switch(action.type) {
     case ARTICLE_START:
       return { ...state, loading: action.loading }

@@ -13,7 +13,7 @@ class Article extends React.Component {
   componentDidMount () {
     const id = this.props.hash.substr(1);
     if(!this.props.data && id.length > 0) {
-      console.log(this.props);
+      if(__DEV__) console.log(this.props);
       this.props.getArticle(id);
     }
   }
