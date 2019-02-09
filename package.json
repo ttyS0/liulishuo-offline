@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --mode development",
-    "release": "webpack --config webpack.config.js --mode production"
+    "build": "NODE_ENV=development webpack --config webpack.config.js --mode development",
+    "release": "NODE_ENV=production webpack --config webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "siger-young",
