@@ -50,7 +50,8 @@ class Navigation extends React.Component {
     return (
       <li key={`route${i}`}>
         <NavLink onClick={() => { this.props.getArticle(v.id); }} to={`/${v.id}`} activeClassName="active" className='waves-effect waves-teal sidenav-close'>
-          {v.title}
+          <span className='text-title'>{v.title}</span>
+          <span className='text-eng'>{v.engTitle}</span>
         </NavLink>
       </li>
     );
