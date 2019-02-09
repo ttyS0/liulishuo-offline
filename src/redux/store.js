@@ -12,10 +12,15 @@ export default function configureStore(preloadedState) {
     createRootReducer(history),
     preloadedState,
     compose(
+      __DEV__ ?
       applyMiddleware(
         routerMiddleware(history),
         thunk,
         logger
+      ) :
+      applyMiddleware(
+        routerMiddleware(history),
+        thunk
       )
     )
   )

@@ -19,7 +19,6 @@ class Navigation extends React.Component {
 
   componentDidMount () {
     this.props.getList();
-    console.log(this.props);
     $('.button-collapse').sideNav({
       closeOnClick: isMobile(),
       edge: 'left' 
