@@ -76,6 +76,10 @@ main {
   font-family: Georgia,Helvetica Neue,Helvetica,STHeitiSC-Light,Arial
 }
 
+main .share-container {
+  display: none;
+}
+
 main .eng {
   font-size: 1.8rem;
 }
