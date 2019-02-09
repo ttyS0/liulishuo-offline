@@ -24,6 +24,14 @@ span.title {
   float: left;
 }
 
+footer, header, main {
+  padding-left: 380px;
+}
+
+.side-nav {
+  width: 380px;
+}
+
 @media only screen and (max-width: 992px) {
   footer, header, main {
     padding-left: 0;
@@ -35,15 +43,6 @@ span.title {
     display: block;
     margin: 0 0 15px
   }
-}
-
-
-footer, header, main {
-  padding-left: 380px;
-}
-
-.side-nav {
-  width: 380px;
 }
 
 .side-nav li {
