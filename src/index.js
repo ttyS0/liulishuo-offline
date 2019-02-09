@@ -3,6 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import configureStore, { history } from './redux/store'
+import "fetch-ie8"
+import "@babel/polyfill";
 
 const store = configureStore()
 const render = () => {
