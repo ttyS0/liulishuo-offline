@@ -27,14 +27,22 @@ class Article extends React.Component {
       return (
         <main>
           <div className='container'>
-            {this.props.data.title && (<h5>{this.props.data.title}</h5>)}
+            {this.props.data.engTitle && (<h4 className="eng">{this.props.data.engTitle}</h4>)}
+            {this.props.data.title && (<h5 className="title">{this.props.data.title}</h5>)}
+            {this.props.data.title && (<span className="author">{`撰稿: ${this.props.data.author}`}</span>)}
             {this.props.id && (<Button waves='light' node='a' href={`cornell/${this.props.id}.pdf`}>Notes Template PDF</Button>)}
             <br />
-            {this.props.data.audio && (<audio className='page-audio' controls='controls' src={this.props.data.audio} />)}
+            {this.props.data.url && (<audio className='page-audio' controls='controls' src={this.props.data.url} />)}
             <div className='poster-container'>
-              {this.props.data.poster && (<img src={this.props.data.poster} />)}
+              {this.props.data.posterUrl && (<img src={this.props.data.posterUrl} />)}
             </div>
-            {this.props.data.contents && this.props.data.contents.map((v, i) => <p key={i}>{v}</p>)}
+            <div className='content-container'>
+              {this.props.data.content && this.props.data.content.map((v, i) =>
+                <div className='paragraph-container'>
+                  <p key={i}>{v.text}</p>
+                </div>
+              )}
+            </div>
           </div>
         </main>
       );
