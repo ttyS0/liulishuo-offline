@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "connected-react-router": "^6.2.2",
+    "connected-react-router": "^6.9.3",
     "fetch-ie8": "^1.5.0",
     "history": "^4.7.2",
     "react": "^16.7.0",
